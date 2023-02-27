@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import {Route, Routes, Redirect} from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import AuthLayout from "./layouts/AuthLayout";
 import PostsLayout from "./layouts/PostsLayout";
@@ -14,12 +14,12 @@ function App() {
     return (
         <div className='min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-150 flex flex-col'>
             <NavBar />
-            <Switch>
+            <Routes>
                 <Route path='/' exact component={MainPage} />
                 <Route path='/auth' component={AuthLayout} />
                 <ProtectedRoute path='/posts/:id?' component={PostsLayout} />
                 <Redirect from='*' to='/' />
-            </Switch>
+            </Routes>
 
             <ToastContainer />
         </div>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 const StyledNavLink = ({ children, to, styleType = "default", className }) => {
     function getLinkStyle(style) {
-        switch (style) {
+        Routes (style) {
             case "button":
                 return "rounded-lg shadow-sm px-4 py-2 ring-1 ring-slate-900/10 hover:text-sky-500  hover:ring-sky-500 transition-all duration-200";
             case "underline":

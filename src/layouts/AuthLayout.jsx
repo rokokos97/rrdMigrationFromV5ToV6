@@ -1,7 +1,7 @@
 import React from "react";
 // Librares
 import { useSelector } from "react-redux";
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Redirect, Route, Routes } from "react-router-dom";
 import { useRouteMatch } from "react-router-dom";
 // Components
 import Card from "../components/Card";
@@ -22,11 +22,11 @@ const AuthLayout = () => {
     return (
         <div className='flex grow flex-col justify-center items-center  dark:text-slate-200 '>
             <Card>
-                <Switch>
+                <Routes>
                     <Route path={path + "/login"} component={LoginPage} />
                     <Route path={path + "/signup"} component={SignUpPage} />
                     <Redirect to={path + "/signup"} />
-                </Switch>
+                </Routes>
             </Card>
         </div>
     );
