@@ -15,7 +15,7 @@ function App() {
         <div className='min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-150 flex flex-col'>
             <NavBar />
             <Routes>
-                <Route path='/' exact component={MainPage} />
+                <Route path='/'  component={MainPage} />
                 <Route path='/auth' component={AuthLayout} />
                 <ProtectedRoute path='/posts/:id?' component={PostsLayout} />
                 <Redirect from='*' to='/' />
