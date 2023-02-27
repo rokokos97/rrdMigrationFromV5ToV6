@@ -1,7 +1,7 @@
 import React from "react";
 // Librares
 import { useSelector } from "react-redux";
-import { Redirect, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useRouteMatch } from "react-router-dom";
 // Components
 import Card from "../components/Card";
@@ -16,7 +16,7 @@ const AuthLayout = () => {
     const isLoggedIn = useSelector(isLoggedInSelector());
 
     if (isLoggedIn) {
-        return <Redirect to='/' />;
+        // return <Redirect to='/' />;
     }
 
     return (
@@ -25,7 +25,7 @@ const AuthLayout = () => {
                 <Routes>
                     <Route path={path + "/login"} element={<LoginPage/>} />
                     <Route path={path + "/signup"} element={<SignUpPage/>} />
-                    <Redirect to={path + "/signup"} />
+                    {/*<Redirect to={path + "/signup"} />*/}
                 </Routes>
             </Card>
         </div>
