@@ -15,9 +15,9 @@ const AuthLayout = () => {
     let { path } = useRouteMatch();
     const isLoggedIn = useSelector(isLoggedInSelector());
 
-    if (isLoggedIn) {
+    // if (isLoggedIn) {
         // return <Redirect to='/' />;
-    }
+    // }
 
     return (
         <div className='flex grow flex-col justify-center items-center  dark:text-slate-200 '>
