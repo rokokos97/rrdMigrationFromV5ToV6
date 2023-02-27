@@ -15,8 +15,8 @@ function App() {
         <div className='min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-150 flex flex-col'>
             <NavBar />
             <Routes>
-                <Route path='/'  element={<MainPage/>} />
-                <Route path='/auth/*' element={<AuthLayout/>} />
+                <Route path=''  element={<MainPage/>} />
+                <Route path='auth/*' element={<AuthLayout/>} />
                 {/*<ProtectedRoute path='/posts/:id?' element={<PostsLayout/>} />*/}
                 {/*<Redirect from='*' to='/' />*/}
             </Routes>
