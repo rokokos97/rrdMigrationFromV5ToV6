@@ -27,8 +27,8 @@ const PostsLayout = ({ children }) => {
             <BackgroundGradiend />
             <ScreenWidthWrapper>
                 <Routes>
-                    <Route path={path + "/:postId"} component={PostPage} />
-                    <Route  path={path} component={PostsListPage} />
+                    <Route path={path + "/:postId"} element={<PostPage/>} />
+                    <Route  path={path} element={<PostsListPage/>} />
                 </Routes>
                 {children}
             </ScreenWidthWrapper>
