@@ -16,7 +16,7 @@ function App() {
             <NavBar />
             <Routes>
                 <Route path='/'  element={<MainPage/>} />
-                <Route path='/auth' element={<AuthLayout/>} />
+                <Route path='/auth/*' element={<AuthLayout/>} />
                 {/*<ProtectedRoute path='/posts/:id?' element={<PostsLayout/>} />*/}
                 {/*<Redirect from='*' to='/' />*/}
             </Routes>
