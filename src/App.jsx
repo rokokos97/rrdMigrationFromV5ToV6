@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Routes, Redirect} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import AuthLayout from "./layouts/AuthLayout";
 // import PostsLayout from "./layouts/PostsLayout";
