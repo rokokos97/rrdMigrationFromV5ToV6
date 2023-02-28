@@ -4,7 +4,8 @@ import { useSelector } from "react-redux";
 import { isLoggedInSelector } from "../store/authSlice";
 function ProtectedRoute({ children }) {
     const isLoggedIn = useSelector(isLoggedInSelector());
-    if (isLoggedIn) return <Navigate to={'/'}/>
+    console.log(isLoggedIn);
+    if (!isLoggedIn) return <Navigate to={'/'}/>
     return children;
     // return (
     //     <Route
