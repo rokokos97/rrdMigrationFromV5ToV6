@@ -1,11 +1,11 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import {Navigate, useLocation} from "react-router-dom";
 import { useSelector } from "react-redux";
 import { isLoggedInSelector } from "../store/authSlice";
 function ProtectedRoute({ children }) {
     const isLoggedIn = useSelector(isLoggedInSelector());
-    console.log(isLoggedIn);
-    if (!isLoggedIn) return <Navigate to={'/'}/>
+    const location = useLocation();
+    if (!isLoggedIn) return <Navigate to={'/auth/login'} state={{ referrer: location}}/>
     return children;
     // return (
     //     <Route
