@@ -1,6 +1,6 @@
-# React Router demo project
+# React Router transfer project
 
-This project was created for the "Frontend Junior Developer" course to demonstrate the migration from React Router version 5 to version 6
+This project was created on the "Junior Frontend Developer" course to demonstrate the migration from React Router version 5 to version 6
 
 **Librares**
 
