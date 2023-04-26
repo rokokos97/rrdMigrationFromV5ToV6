@@ -1,4 +1,4 @@
-# React Router transfer project
+# React Router migration project
 
 This project was created on the "Junior Frontend Developer" course to demonstrate the migration from React Router version 5 to version 6
 
